@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="container">
+      <div id="sidebar">
+        <div id="sidebar_title">
+          <img id="logo" src="icons/bacteria.svg" alt="bacteria" />Dashboard
+        </div>
+        <div id="nav">
+          <ul>
+            <li>
+              <img class="side_icon" src="icons/home.svg" alt="home" /><a
+                href="#home"
+                >Home</a
+              >
+            </li>
+            <li>
+              <img
+                class="side_icon"
+                src="icons/account-circle.svg"
+                alt="profile"
+              /><a href="#profile">Profile</a>
+            </li>
+            <li>
+              <img class="side_icon" src="icons/message.svg" alt="message" /><a
+                href="#messages"
+                >Messages</a
+              >
+            </li>
+            <li>
+              <img class="side_icon" src="icons/history.svg" alt="history" /><a
+                href="#history"
+                >History</a
+              >
+            </li>
+            <li>
+              <img
+                class="side_icon"
+                src="icons/checkbox-multiple-marked.svg"
+                alt="tasks"
+              /><a href="#tasks">Tasks</a>
+            </li>
+            <li>
+              <img
+                class="side_icon"
+                src="icons/account-group.svg"
+                alt="communities"
+              /><a href="#commmunities">Communities</a>
+            </li>
+            <br />
+            <li>
+              <img class="side_icon" src="icons/cogs.svg" alt="settings" /><a
+                href="#settings"
+                >Settings</a
+              >
+            </li>
+            <li>
+              <img
+                class="side_icon"
+                src="icons/help-rhombus.svg"
+                alt="support"
+              /><a href="#support">Support</a>
+            </li>
+            <li>
+              <img
+                class="side_icon"
+                src="icons/shield-key.svg"
+                alt="privacy"
+              /><a href="#privacy">Privacy</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="main_content">
+        <div id="header">
+          <div id="headersearch">
+            <div id="searchbar">
+              <img
+                class="main_icon"
+                id="search_icon"
+                src="icons/magnify.svg"
+                alt="search"
+              /><input type="text" />
+            </div>
+            <div id="notif_name">
+              <button id="alert">
+                <img
+                  class="main_icon"
+                  id="notif_icon"
+                  src="icons/bell-ring-outline.svg"
+                  alt="notif"
+                />
+              </button>
+              <div class="small_profile" id="gojo">
+                <img
+                  class="profile_icon"
+                  id="gojo"
+                  src="icons/icons8-satoru-gojo.svg"
+                />
+              </div>
+              <span>Satoru Gojo</span>
+            </div>
+          </div>
+          <div id="intro">
+            <div id="welcome">
+              <div class="large_profile">
+                <img
+                  class="profile_icon"
+                  id="biggojo"
+                  src="icons/icons8-satoru-gojo.svg"
+                />
+              </div>
+              <div id="message">
+                <div id="smalltext">Hi there,</div>
+                <div id="largetext">Satoru Gojo (@gojo)</div>
+              </div>
+            </div>
+            <div>
+              <button class="create">New</button>
+              <button class="create">Upload</button>
+              <button class="create">Share</button>
+            </div>
+          </div>
+        </div>
+        <div id="page">
+          <div id="pagemain">
+            <h1>Your Projects</h1>
+            <div id="projects">
+              <div class="project">
+                <div>
+                  <span class="title">Super Cool Project</span>
+                  <p class="project_description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                </div>
+                <div class="project_buttons">
+                  <button class="project_nav">
+                    <img
+                      class="projectnav"
+                      src="icons/star-plus-outline.svg"
+                      alt="starplus"
+                    />
+                  </button>
+                  <button class="project_nav">
+                    <img
+                      class="projectnav"
+                      src="icons/eye-plus-outline.svg"
+                      alt="eyeplus"
+                    />
+                  </button>
+                  <button class="project_nav">
+                    <img
+                      class="projectnav"
+                      src="icons/source-fork.svg"
+                      alt="sourcefork"
+                    />
+                  </button>
+                </div>
+              </div>
+              <div class="project">
+                <div>
+                  <span class="title">Less Cool Project</span>
+                  <p class="project_description">
+                    Ut ornare lectus sit amet est. Ligula ullamcorper malesuada
+                    proin libero nunc. Sed cras ornare arcu dui. Fames ac turpis
+                    egestas maecenas pharetra convallis posuere morbi leo.
+                  </p>
+                </div>
+                <div class="project_buttons">
+                  <button class="project_nav">
+                    <img
+                      class="projectnav"
+                      src="icons/star-plus-outline.svg"
+                      alt="starplus"
+                    />
+                  </button>
+                  <button class="project_nav">
+                    <img
+                      class="projectnav"
+                      src="icons/eye-plus-outline.svg"
+                      alt="eyeplus"
+                    />
+                  </button>
+                  <button class="project_nav">
+                    <img
+                      class="projectnav"
+                      src="icons/source-fork.svg"
+                      alt="sourcefork"
+                    />
+                  </button>
+                </div>
+              </div>
+              <div class="project">
+                <div>
+                  <span class="title">Impossible App</span>
+                  <p class="project_description">
+                    Fringilla phasellus faucibus scelerisque eleifend donec.
+                    Proin sed libero enim sed faucibus turpis in.
+                  </p>
+                </div>
+                <div class="project_buttons">
+                  <button class="project_nav">
+                    <img
+                      class="projectnav"
+                      src="icons/star-plus-outline.svg"
+                      alt="starplus"
+                    />
+                  </button>
+                  <button class="project_nav">
+                    <img
+                      class="projectnav"
+                      src="icons/eye-plus-outline.svg"
+                      alt="eyeplus"
+                    />
+                  </button>
+                  <button class="project_nav">
+                    <img
+                      class="projectnav"
+                      src="icons/source-fork.svg"
+                      alt="sourcefork"
+                    />
+                  </button>
+                </div>
+              </div>
+              <div class="project">
+                <div>
+                  <span class="title">Easy Peasy App</span>
+                  <p class="project_description">
+                    Pellentesque nec nam aliquam sem. Vitae congue mauris
+                    rhoncus aenean. Mauris ultrices eros in cursus. Sollicitudin
+                    nibh sit amet commodo. Elementum tempus egestas sed sed
+                    risus.
+                  </p>
+                </div>
+                <div class="project_buttons">
+                  <button class="project_nav">
+                    <img
+                      class="projectnav"
+                      src="icons/star-plus-outline.svg"
+                      alt="starplus"
+                    />
+                  </button>
+                  <button class="project_nav">
+                    <img
+                      class="projectnav"
+                      src="icons/eye-plus-outline.svg"
+                      alt="eyeplus"
+                    />
+                  </button>
+                  <button class="project_nav">
+                    <img
+                      class="projectnav"
+                      src="icons/source-fork.svg"
+                      alt="sourcefork"
+                    />
+                  </button>
+                </div>
+              </div>
+              <div class="project">
+                <div>
+                  <span class="title">Ad Blocker</span>
+                  <p class="project_description">
+                    Ultrices dui sapien eget mi proin sed libero. Amet luctus
+                    venenatis lectus magna fringilla urna porttitor. Tellus in
+                    hac habitasse platea dictumst vestibulum rhoncus.
+                  </p>
+                </div>
+                <div class="project_buttons">
+                  <button class="project_nav">
+                    <img
+                      class="projectnav"
+                      src="icons/star-plus-outline.svg"
+                      alt="starplus"
+                    />
+                  </button>
+                  <button class="project_nav">
+                    <img
+                      class="projectnav"
+                      src="icons/eye-plus-outline.svg"
+                      alt="eyeplus"
+                    />
+                  </button>
+                  <button class="project_nav">
+                    <img
+                      class="projectnav"
+                      src="icons/source-fork.svg"
+                      alt="sourcefork"
+                    />
+                  </button>
+                </div>
+              </div>
+              <div class="project">
+                <div>
+                  <span class="title">Money Maker</span>
+                  <p class="project_description">
+                    Leo duis ut diam quam nulla porttitor massa id. Et magnis
+                    dis parturient montes nascetur ridiculus mus mauris vitae.
+                  </p>
+                </div>
+                <div class="project_buttons">
+                  <button class="project_nav">
+                    <img
+                      class="projectnav"
+                      src="icons/star-plus-outline.svg"
+                      alt="starplus"
+                    />
+                  </button>
+                  <button class="project_nav">
+                    <img
+                      class="projectnav"
+                      src="icons/eye-plus-outline.svg"
+                      alt="eyeplus"
+                    />
+                  </button>
+                  <button class="project_nav">
+                    <img
+                      class="projectnav"
+                      src="icons/source-fork.svg"
+                      alt="sourcefork"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="notes">
+            <div>
+              <h1>Announcements</h1>
+              <div id="announcements">
+                  <a href="#maintenance" class="announcelinks">
+                    <p class="announcetitle">Site Maintenance</p>
+                    <p class="announcedescription">Magna eget est lorem ipsum dolor sit amet consectetur adipiscing. Egestas erat imperdiet sed euismod. Lacus sed turpis tincidunt id. Neque viverra justo nec ultrices dui sapien eget mi. Massa tempor nec feugiat nisl. Sapien eget mi proin sed libero enim sed faucibus turpis. Eget duis at tellus at. Nibh ipsum consequat nisl vel pretium. Sed cras ornare arcu dui vivamus arcu felis bibendum ut. At erat pellentesque adipiscing commodo. Velit euismod in pellentesque massa placerat duis ultricies lacus sed. Nisl purus in mollis nunc sed id semper risus. Quis hendrerit dolor magna eget est.</p>
+                  </a>
+                    <div class="note title">Community Share Day</div>
+                <div class="note title">Updated Privacy Policy</div>
+              </div>
+            </div>
+            <div>
+              <h1>Trending</h1>
+              <div id="trending">
+                <div class="profile">
+                    <div class="small_profile" id="gojo">
+                    <img
+                      class="profile_icon"
+                      id="gojo"
+                      src="icons/icons8-satoru-gojo.svg"
+                    />
+                    </div>
+                  <div class="handle">
+                    <div class="username">@gojo</div>
+                    <div class="projectname">Impossible Project</div>
+                  </div>
+                </div>
+                <div class="profile"><div id="sukuna_profile" id="gojo">
+                    <img
+                      class="profile_icon"
+                      id="sukuna"
+                      src="icons/sukuna.png"
+                    />
+                </div>
+                <div class="handle">
+                  <div class="username">@sukuna</div>
+                  <div class="projectname">Super Cool Project</div>
+                </div>
+              </div>
+                <div class="profile"><div id="panda_profile" id="gojo">
+                    <img
+                      class="profile_icon"
+                      id="panda"
+                      src="icons/panda.png"
+                    />
+                </div>
+                <div class="handle">
+                  <div class="username">@panda</div>
+                  <div class="projectname">Easy Peasy App</div>
+                </div>
+              </div>
+                <div class="profile"><div id="nanami_profile" id="gojo">
+                    <img
+                      class="profile_icon"
+                      id="nanami"
+                      src="icons/nanami.png"
+                    />
+                </div>
+                <div class="handle">
+                  <div class="username">@nanami</div>
+                  <div class="projectname">Money Maker</div>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
