@@ -75,14 +75,13 @@ li:hover {
 }
 
 a.announcelinks:hover,
-.project:hover,
 .profile:hover {
     -ms-transform: scale(1); 
     -webkit-transform: scale(1.05);
     transform: translateX(2px);
 }
 
-a {
+a.sidelink {
     text-decoration: none;
     color: white;
 }
@@ -130,9 +129,17 @@ input {
     height: 1.2em;
 }
 
-#alert {
+button#alert,
+button#searchbutton {
     background-color: white;
     border: none;
+    margin-right: 4px;
+}
+
+button#alert:hover,
+button.project_nav:hover,
+button#searchbutton:hover {
+    transform: scale(1.05);
 }
 
 #notif_name {
@@ -212,7 +219,7 @@ input {
 }
 
 button.create:hover {
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 /* main project section */
@@ -263,9 +270,16 @@ h1{
     padding: 20px 20px 16px 20px;
 }
 
-.title {
+a.title {
     font-weight: bold;
     font-size: .9em;
+    text-decoration: none;
+    color: black;
+    display: inline-block; 
+}
+
+a.title:hover{
+    transform: scale(1.02);
 }
 
 .project_description {
@@ -278,6 +292,10 @@ h1{
     display: flex;
     justify-content: end;
     margin-top: 8px;
+}
+
+.project_nav:hover {
+    transform: scale(1.05);
 }
 
 .projectnav {
@@ -303,6 +321,7 @@ h1{
 }
 
 a.announcelinks {
+    text-decoration: none;
     display: grid;
     max-height: 100px;
     color: black;
@@ -412,6 +431,15 @@ p.announcedescription {
     font-size: .7em;
     color:grey;
 
+}
+
+a.profilelink {
+    cursor: pointer;
+
+}
+
+button {
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 700px){
