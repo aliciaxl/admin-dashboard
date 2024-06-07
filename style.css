@@ -100,7 +100,7 @@ a.sidelink {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 12px 32px;
+    padding: 12px 24px;
 }
  
 #headersearch {
@@ -215,7 +215,7 @@ button#searchbutton:hover {
     background-color: #311a96;
     padding: 8px 24px;
     border-radius: 24px;
-    margin: 4px 12px;
+    margin: 4px 0px 4px 16px;
 }
 
 button.create:hover {
@@ -443,8 +443,32 @@ button {
 }
 
 @media only screen and (max-width: 700px){
-  
+    
+    #intro {
+        display: flex;
+        flex-wrap: space-between;
+    }
+
+    #toprightprofilename {
+        text-align: center;
+        padding: 0px;
+        margin: 0px
+    }
+
+    #createbuttons {
+        display: flex;
+        flex-direction: column;
+        align-content: end;
+    }
+
+
     #projects {
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    #page {
         display: flex;
         flex-direction: column;
     }
