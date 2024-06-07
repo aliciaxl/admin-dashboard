@@ -17,7 +17,6 @@ body {
 #container {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    height: 100%;
 }
 
 
@@ -26,7 +25,7 @@ body {
     background-color: #311a96;
     color:white;
     height: 100%;
-    padding: 12px 24px 10px 16px;
+    padding: 12px 24px 10px 12px;
 }
 
 #logo {
@@ -39,7 +38,7 @@ svg {
 }
 
 img {
-    height: 2em;
+    height: 1.6em;
 }
 
 .side_icon {
@@ -52,27 +51,35 @@ img {
     display: flex;
     align-items: center;
     font-weight: 600;
-    font-size: 1.3em;
-    margin-bottom: 36px;
+    font-size: 1.4em;
+    margin-bottom: 44px;
 }
 
 ul {
     list-style-type: none;
     padding-left: 0;
-    margin-left: 10px;
+    margin-left: 14px;
 }
 
 li {
     font-weight: 600;
     display: flex;
     align-items: center; 
-    margin-bottom: 18px;
+    margin-bottom: 20px;
 }
 
 li:hover {
     -ms-transform: scale(1); 
     -webkit-transform: scale(1.05);
     transform: translateX(4px);
+}
+
+a.announcelinks:hover,
+.project:hover,
+.profile:hover {
+    -ms-transform: scale(1); 
+    -webkit-transform: scale(1.05);
+    transform: translateX(2px);
 }
 
 a {
@@ -82,27 +89,26 @@ a {
 
 
 
+
 /* Main page styling */
 #main_content {
-    display: grid;
-    grid-auto-flow: column;
-    grid-template-rows: 1fr 5fr;
-    height: 100%;
+    display: flex;
+    flex-direction: column;
     
 }
 
 #header {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     padding: 12px 32px;
-    height: 100%;
 }
  
 #headersearch {
     display: flex;
     justify-content: space-between;
     font-weight: 600;
-    margin-bottom: 24px;
+    margin-bottom: 20px;
 }
 
 #searchbar {
@@ -136,6 +142,7 @@ input {
 
 #notif_icon {
     height: 1.3em;
+    margin-left: 12px;
     margin-right: 12px;
 }
 
@@ -201,7 +208,11 @@ input {
     background-color: #311a96;
     padding: 8px 24px;
     border-radius: 24px;
-    margin-left: 12px;
+    margin: 4px 12px;
+}
+
+button.create:hover {
+    opacity: 0.8;
 }
 
 /* main project section */
@@ -211,48 +222,62 @@ input {
     grid-template-columns: 2.9fr 1.1fr;
     grid-template-rows: 1fr;
     background-color: #f9e2f3;
-    padding: 0px 28px 28px 16px;
-    height: 100%;
+    padding: 0px 24px 36px 20px;
+    /* height: 100%; */
 }
 
 h1{
-    font-size: .9em;
+    font-size: 1em;
     margin-top: 24px;
     margin-bottom: 10px;
 }
+
+#pagemain {
+    display: flex;
+    height: 100%;
+}
+
+#pagemain-children {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
 
 #projects {
     display: grid;
     grid-template: 1fr 1fr 1fr / 1fr 1fr ;
     gap: 20px;
-    padding-right: 16px;
+    padding-right: 20px;
+    height: 100%;
 }
 
 .project {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     overflow: scroll;
     justify-content: space-between;
     background-color: white;
     border-radius: 6px;
     border-left: 6px solid #a32542;
-    padding: 20px 16px 12px 16px;
-    min-width: 100px;
+    padding: 20px 20px 16px 20px;
 }
 
 .title {
     font-weight: bold;
-    font-size: .85em;
+    font-size: .9em;
 }
 
 .project_description {
     color: grey;
-    font-size: .77em;
-    margin-top: 2px;
+    font-size: .8em;
+    margin-top: 4px;
 }
 
 .project_buttons {
     display: flex;
     justify-content: end;
+    margin-top: 8px;
 }
 
 .projectnav {
@@ -273,37 +298,53 @@ h1{
     height: 100%;
 }
 
+.notes-child {
+
+}
+
 a.announcelinks {
+    display: grid;
+    max-height: 100px;
     color: black;
     display: inline-block;
-    max-height: 30%;
     overflow: hidden;
-    text-overflow: ellipsis;
+    text-overflow: ellipsis;   
 }
 
 #announcements {
     display: flex;
     flex-direction: column;
-
-    overflow: ellipsis;
     background-color: white;
     padding: 24px 24px;
     border-radius: 6px;
-    height: 200px;
+    flex-grow: 1;
 }
 
 .announcetitle {
-    font-size: .7em;
+    font-size: .8em;
     margin: 0;
+    font-weight: bold;
 }
 
-.announcedescription {
+p.announcedescription {
     font-weight: 400;
     color: grey;
-    font-size: .6em;
+    font-size: .7em;
     margin-top: 2px;
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* Limit to three lines */
+    -webkit-box-orient: vertical; /* Set orientation */
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+#maintenance,
+#commshareday {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+    border-bottom: solid 1px lightgrey;
 }
 
 
@@ -372,3 +413,13 @@ a.announcelinks {
     color:grey;
 
 }
+
+@media only screen and (max-width: 700px){
+  
+    #projects {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
